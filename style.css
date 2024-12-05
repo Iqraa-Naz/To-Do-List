@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8967B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.todo-container {
+    background: #CB80AB;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+}
+
+.task-checkbox {
+    width: fit-content;
+}
+
+/* Styling the tasks */
+li.checked {
+    text-decoration: line-through;
+    color: white;
+}
+
+/* Style the checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Style the delete button (X) */
+span.remove-task {
+    cursor: pointer;
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+span.remove-task:hover {
+    color: darkred;
+}
+
+
